@@ -17,7 +17,7 @@ import java.util.zip.ZipFile;
 
 public class UnzipHugeZipFileUsingExecutorService {
 
-    private void processZipFileUsingParallelExecution(String zipFilePath)  {
+    public void processZipFile(String zipFilePath)  {
         ExecutorService executorService = Executors.newFixedThreadPool(100);
         startZipFileExtraction(zipFilePath, executorService);
     }
